@@ -5,105 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{
-    margin:0;
-    font-family:system-ui, sans-serif;
-    background:#0f1115;
-    color:white;
-}
+body{margin:0;font-family:system-ui;background:#0f1115;color:white}
 
-/* NAVBAR */
-nav{
-    background:#111;
-    padding:18px 30px;
-    display:flex;
-    justify-content:flex-end;
-}
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:500;
-}
-nav a:hover{color:#ff6a00;}
+/* NAV */
+nav{background:#111;padding:18px 30px;text-align:right}
+nav a{color:white;text-decoration:none;margin-left:25px}
+nav a:hover{color:#ff6a00}
 
 /* HERO */
 header{
-    padding:120px 20px;
-    text-align:center;
-    background:linear-gradient(135deg,#0f1115,#1b1f26);
-}
-header h1{
-    font-size:56px;
-    margin:0;
-}
-header p{
-    color:#aaa;
-    margin-top:14px;
-    font-size:20px;
-}
-.btn{
-    display:inline-block;
-    margin-top:40px;
-    padding:16px 34px;
-    background:#ff6a00;
-    color:black;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:600;
-}
+text-align:center;
+padding:140px 20px;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;background-position:center}
+header h1{font-size:56px;margin:0}
+header p{color:#ddd;margin-top:15px;font-size:20px}
 
 /* SECTIONS */
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 20px;
-}
-h2{
-    font-size:32px;
-    margin-bottom:30px;
-}
+section{max-width:1200px;margin:auto;padding:80px 20px}
+h2{font-size:36px;margin-bottom:30px}
 
-/* CARDS */
+/* GRID */
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-.card{
-    background:#181b22;
-    padding:28px;
-    border-radius:14px;
-    border:1px solid #262b35;
-    transition:0.3s;
-}
-.card:hover{
-    border-color:#ff6a00;
-    transform:translateY(-4px);
-}
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px}
 
-/* TIMELINE */
-.timeline{
-    border-left:3px solid #ff6a00;
-    padding-left:30px;
-}
-.timeline div{
-    margin-bottom:35px;
-}
+.card{
+background:#181b22;
+border-radius:14px;
+overflow:hidden;
+border:1px solid #262b35;
+transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:#ff6a00}
+.card img{width:100%;height:200px;object-fit:cover}
+.card p{padding:18px;margin:0}
+
+/* STRIP */
+.strip{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px}
+.strip img{width:100%;height:150px;object-fit:cover;border-radius:10px}
 
 /* CTA */
 .highlight{
-    background:#ff6a00;
-    color:black;
-    text-align:center;
-    padding:90px 20px;
-}
+background:#ff6a00;color:black;text-align:center;padding:100px 20px}
+.btn{display:inline-block;margin-top:30px;padding:15px 32px;background:black;color:white;text-decoration:none;border-radius:8px}
 
-footer{
-    text-align:center;
-    padding:40px;
-    color:#777;
-}
+footer{text-align:center;padding:40px;color:#777}
 </style>
 </head>
 
@@ -119,86 +71,61 @@ footer{
 <header>
 <h1>Vishwajeet Pathak</h1>
 <p>Furniture Design Manager • Product Development • Manufacturing Integration</p>
-<a class="btn" href="contact.html">Contact Me</a>
 </header>
 
 <section>
-<h2>About</h2>
-<p>
-I design furniture systems with a strong focus on manufacturability, modular logic,
-and production scalability. My work bridges design intent with real-world engineering,
-costing strategy, and execution feasibility.
-</p>
+<h2>About My Work</h2>
+<p>I design furniture systems focused on modular logic, manufacturability and scalable production. My work bridges concept thinking with real-world engineering execution and cost intelligence.</p>
 </section>
 
 <section>
-<h2>Selected Work</h2>
+<h2>Selected Work Preview</h2>
 
 <div class="grid">
 
-<div class="card">
-<h3>Infinity Kitchen Module</h3>
-<p>Developed a modular kitchen architecture optimized for scalable production and flexible layouts.</p>
-</div>
-
-<div class="card">
-<h3>Global Retail Fixture Systems</h3>
-<p>Delivered modular retail fixtures for international brands with packaging and logistics optimization.</p>
-</div>
-
-<div class="card">
-<h3>Madewithspin Experience Store</h3>
-<p>Handled concept to execution for flagship retail environment with integrated detailing and coordination.</p>
-</div>
+<div class="card"><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80"><p>Retail Fixture Systems</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80"><p>Workspace Design</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80"><p>Kitchen Modules</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"><p>Residential Furniture</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1567016549637-2a6c0a9b4b2b?auto=format&fit=crop&w=1200&q=80"><p>Store Installations</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80"><p>Joinery Experiments</p></div>
 
 </div>
 </section>
 
 <section>
-<h2>Experience</h2>
+<h2>Design Inspiration</h2>
 
-<div class="timeline">
+<div class="strip">
 
-<div>
-<h3>Manager – Design & Development</h3>
-<p>Shark Shopfits Pvt. Ltd. | 2017 – Present</p>
-</div>
-
-<div>
-<h3>Engineer – Planning & Production</h3>
-<p>Harmony Systems | 2014 – 2017</p>
-</div>
+<img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1521783988139-893ce3e5d0c7?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=800&q=80">
 
 </div>
 </section>
 
 <section>
-<h2>Skills & Tools</h2>
+<h2>Latest Insights</h2>
 
 <div class="grid">
 
-<div class="card">
-<h3>Design Tools</h3>
-<p>SolidWorks, AutoCAD, SketchUp</p>
-</div>
-
-<div class="card">
-<h3>Engineering Focus</h3>
-<p>BOM Planning, Vendor Development, Modular Systems</p>
-</div>
-
-<div class="card">
-<h3>Project Tools</h3>
-<p>ERP Systems, MS Excel, MS Project</p>
-</div>
+<div class="card"><img src="https://images.unsplash.com/photo-1616628182509-3e3b9a1c6f5d?auto=format&fit=crop&w=1200&q=80"><p><a href="modular-furniture-systems.html" style="color:white;text-decoration:none">Modular Furniture Systems</a></p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=80"><p><a href="designing-for-manufacturing.html" style="color:white;text-decoration:none">Designing for Manufacturing</a></p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"><p><a href="ai-in-furniture-development.html" style="color:white;text-decoration:none">AI in Furniture</a></p></div>
 
 </div>
 </section>
 
 <div class="highlight">
-<h2>Let’s build smarter furniture systems</h2>
-<p>I work where design meets manufacturing intelligence.</p>
-<a class="btn" href="contact.html">Get in Touch</a>
+<h2>Let’s Build Smarter Furniture Systems</h2>
+<p>Open to collaborations, consulting, and product development opportunities.</p>
+<a class="btn" href="contact.html">Contact Me</a>
 </div>
 
 <footer>

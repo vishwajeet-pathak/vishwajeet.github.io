@@ -1,45 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vishwajeet Pathak | Furniture Designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {font-family: Arial; margin:0; background:#f5f5f5;}
-        header {background:#222; color:white; padding:40px; text-align:center;}
-        section {padding:40px; max-width:900px; margin:auto;}
-        .project {background:white; padding:20px; margin:20px 0; border-radius:10px;}
-        footer {text-align:center; padding:20px; color:#777;}
-    </style>
+<title>Vishwajeet Pathak | Furniture Design Manager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin:0;
+    font-family: system-ui, sans-serif;
+    background:#0f1115;
+    color:white;
+}
+
+header {
+    padding:100px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#0f1115,#1c1f26);
+}
+
+header h1 {
+    font-size:48px;
+    margin:0;
+}
+
+header p {
+    color:#aaa;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.accent {
+    color:#ff6a00;
+}
+
+section {
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2 {
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card {
+    background:#181b22;
+    padding:28px;
+    border-radius:14px;
+    border:1px solid #252933;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-6px);
+    border-color:#ff6a00;
+}
+
+.highlight {
+    background:#ff6a00;
+    color:black;
+    text-align:center;
+    padding:80px 20px;
+}
+
+footer {
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+.btn {
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    background:#ff6a00;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Vishwajeet Pathak</h1>
-    <p>Furniture Designer & Manufacturing Engineer</p>
+<h1>Vishwajeet <span class="accent">Pathak</span></h1>
+<p>Furniture Design Manager • Product Development Specialist • Manufacturing Engineer</p>
+<a class="btn" href="mailto:kjeetpathak@gmail.com">Contact Me</a>
 </header>
 
 <section>
-    <h2>Projects</h2>
+<h2>What I Do</h2>
+<div class="grid">
 
-    <div class="project">
-        <h3>Modular Workstation System</h3>
-        <p>Design of a scalable modular workstation optimized for manufacturability and assembly efficiency.</p>
-    </div>
+<div class="card">
+<h3>Design to Production</h3>
+<p>I develop furniture systems from concept to installation, ensuring design intent survives manufacturing realities.</p>
+</div>
 
-    <div class="project">
-        <h3>Metal Frame Chair Design</h3>
-        <p>Engineering-driven chair design focusing on strength, minimal material usage, and production feasibility.</p>
-    </div>
+<div class="card">
+<h3>Modular Product Systems</h3>
+<p>Specialized in scalable retail fixtures, modular workspaces, and production-ready furniture architecture.</p>
+</div>
 
-    <div class="project">
-        <h3>Booth Structure Costing Project</h3>
-        <p>Detailed cost breakdown and engineering analysis of modular booth structures using technical drawings.</p>
-    </div>
+<div class="card">
+<h3>Engineering-Led Design</h3>
+<p>My work integrates BOM logic, costing, vendor feasibility, and structural performance from day one.</p>
+</div>
 
+</div>
 </section>
 
+<section>
+<h2>Selected Work</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Infinity Kitchen Module</h3>
+<p>A modular kitchen concept focused on flexibility, hardware optimization, and scalable production.</p>
+</div>
+
+<div class="card">
+<h3>Global Retail Systems</h3>
+<p>Delivered fixtures for brands including Apple, Amazon, Adidas, Samsung, and Flipkart.</p>
+</div>
+
+<div class="card">
+<h3>Madewithspin Experience Store</h3>
+<p>End-to-end design, development, and execution of flagship store environment in Delhi.</p>
+</div>
+
+</div>
+</section>
+
+<div class="highlight">
+<h2>Let’s build smarter furniture systems</h2>
+<p>I work where design meets manufacturing intelligence.</p>
+</div>
+
 <footer>
-    <p>© Vishwajeet Pathak</p>
+© Vishwajeet Pathak • pathakv.com
 </footer>
 
 </body>

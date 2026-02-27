@@ -5,42 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{margin:0;font-family:system-ui;background:#0f1115;color:white;}
+body{
+    margin:0;
+    font-family:system-ui, sans-serif;
+    background:#0f1115;
+    color:white;
+}
 
+/* NAV */
 nav{
     background:#111;
     padding:18px 30px;
-    display:flex;
-    justify-content:flex-end;
+    text-align:right;
 }
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:30px;
+    margin-left:25px;
 }
 nav a:hover{color:#ff6a00;}
 
+/* HERO */
 header{
     text-align:center;
-    padding:100px 20px;
+    padding:90px 20px;
     background:linear-gradient(135deg,#0f1115,#1b1f26);
 }
-header h1{font-size:48px;margin:0;}
+header h1{font-size:46px;margin:0;}
 
+/* GRID */
 section{
-    max-width:1000px;
+    max-width:1200px;
     margin:auto;
     padding:60px 20px;
 }
 
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
 .card{
     background:#181b22;
-    padding:28px;
     border-radius:14px;
+    overflow:hidden;
     border:1px solid #262b35;
-    margin-bottom:25px;
+    transition:0.3s;
 }
-.card:hover{border-color:#ff6a00;}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#ff6a00;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    margin-top:0;
+}
 
 footer{
     text-align:center;
@@ -65,19 +96,32 @@ footer{
 
 <section>
 
+<div class="grid">
+
 <div class="card">
+<img src="https://images.unsplash.com/photo-1616627984728-bf7f3d6b7a3d?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
 <h3>Infinity Kitchen Module</h3>
-<p>A modular kitchen system designed for scalability, manufacturing efficiency, and flexible layout adaptation.</p>
+<p>Modular kitchen architecture focused on scalability, hardware efficiency and production logic.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
 <h3>Global Retail Fixture Systems</h3>
-<p>Delivered fixtures for multiple international retail brands with packaging optimization and modular deployment.</p>
+<p>Retail fixture systems delivered internationally with packaging optimization and modular deployment.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
 <h3>Madewithspin Experience Store</h3>
-<p>Handled concept to execution for flagship store environment with full detailing and production coordination.</p>
+<p>Concept to execution for flagship retail environment integrating design and production.</p>
+</div>
+</div>
+
 </div>
 
 </section>

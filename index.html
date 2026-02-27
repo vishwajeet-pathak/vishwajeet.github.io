@@ -5,98 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{
-    margin:0;
-    font-family:system-ui, sans-serif;
-    background:#0f1115;
-    color:white;
-}
-
-/* NAV */
-nav{
-    background:#111;
-    padding:18px 30px;
-    display:flex;
-    justify-content:flex-end;
-}
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:500;
-}
+body{margin:0;font-family:system-ui;background:#0f1115;color:white;}
+nav{background:#111;padding:18px 30px;display:flex;justify-content:flex-end;}
+nav a{color:white;text-decoration:none;margin-left:30px;}
 nav a:hover{color:#ff6a00;}
 
-/* HERO */
-header{
-    padding:120px 20px 100px;
-    text-align:center;
-    background:linear-gradient(135deg,#0f1115,#1b1f26);
-}
-header h1{
-    font-size:56px;
-    margin:0;
-    letter-spacing:1px;
-}
-header p{
-    color:#aaa;
-    margin-top:14px;
-    font-size:20px;
-}
+header{text-align:center;padding:120px 20px;background:linear-gradient(135deg,#0f1115,#1b1f26);}
+header h1{font-size:58px;margin:0;}
+header p{color:#aaa;margin-top:14px;font-size:20px;}
+.btn{display:inline-block;margin-top:40px;padding:16px 34px;background:#ff6a00;color:black;text-decoration:none;border-radius:10px;font-weight:600;}
 
-.btn{
-    display:inline-block;
-    margin-top:40px;
-    padding:16px 34px;
-    background:#ff6a00;
-    color:black;
-    text-decoration:none;
-    border-radius:10px;
-    font-weight:600;
-}
+section{max-width:1100px;margin:auto;padding:90px 20px;}
+h2{font-size:34px;margin-bottom:35px;}
 
-/* SECTIONS */
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:90px 20px;
-}
-h2{
-    font-size:34px;
-    margin-bottom:35px;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+.card{background:#181b22;padding:30px;border-radius:16px;border:1px solid #262b35;}
+.card:hover{border-color:#ff6a00;transform:translateY(-5px);}
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
+.timeline{border-left:3px solid #ff6a00;padding-left:30px;}
+.timeline div{margin-bottom:35px;}
 
-.card{
-    background:#181b22;
-    padding:30px;
-    border-radius:16px;
-    border:1px solid #262b35;
-    transition:0.3s;
-}
-.card:hover{
-    transform:translateY(-6px);
-    border-color:#ff6a00;
-}
-
-/* HIGHLIGHT */
-.highlight{
-    background:#ff6a00;
-    color:black;
-    text-align:center;
-    padding:100px 20px;
-}
-
-footer{
-    text-align:center;
-    padding:45px;
-    color:#777;
-}
+.highlight{background:#ff6a00;color:black;text-align:center;padding:100px 20px;}
+footer{text-align:center;padding:45px;color:#777;}
 </style>
 </head>
 
@@ -114,25 +44,10 @@ footer{
 </header>
 
 <section>
-<h2>What I Do</h2>
-<div class="grid">
-
-<div class="card">
-<h3>Design to Production</h3>
-<p>I develop furniture systems from concept to installation, ensuring manufacturability, costing logic, and scalability.</p>
-</div>
-
-<div class="card">
-<h3>Modular Product Systems</h3>
-<p>Specialized in scalable retail fixtures, modular workspaces, and engineered furniture solutions.</p>
-</div>
-
-<div class="card">
-<h3>Engineering-Led Design</h3>
-<p>My work integrates BOM planning, vendor feasibility, structural logic, and production workflows from day one.</p>
-</div>
-
-</div>
+<h2>About Me</h2>
+<p>
+I am a furniture design and product development professional with over a decade of experience translating design intent into manufacturable systems. My work focuses on modularity, production feasibility, cost logic, and scalable product architectures across retail, commercial, and institutional environments.
+</p>
 </section>
 
 <section>
@@ -141,26 +56,73 @@ footer{
 
 <div class="card">
 <h3>Infinity Kitchen Module</h3>
-<p>A modular kitchen system designed for scalable production and flexible configuration.</p>
+<p><strong>Challenge:</strong> Create adaptable modular kitchen architecture.</p>
+<p><strong>Approach:</strong> Standardized modules and optimized hardware integration.</p>
+<p><strong>Outcome:</strong> Production-ready system with scalable configuration.</p>
 </div>
 
 <div class="card">
-<h3>Global Retail Systems</h3>
-<p>Delivered fixtures for Apple, Amazon, Adidas, Samsung, Flipkart and other international clients.</p>
+<h3>Global Retail Fixture Systems</h3>
+<p><strong>Challenge:</strong> Deliver consistent fixtures across international markets.</p>
+<p><strong>Approach:</strong> Modular packaging logic and container optimization.</p>
+<p><strong>Outcome:</strong> Efficient deployment for Apple, Amazon, Adidas and Samsung.</p>
 </div>
 
 <div class="card">
 <h3>Madewithspin Experience Store</h3>
-<p>End-to-end concept, detailing, development and execution of flagship retail environment.</p>
+<p><strong>Challenge:</strong> Translate brand identity into physical space.</p>
+<p><strong>Approach:</strong> Integrated concept, detailing and execution planning.</p>
+<p><strong>Outcome:</strong> Delivered flagship experience environment.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Experience</h2>
+<div class="timeline">
+
+<div>
+<h3>Manager – Design & Development</h3>
+<p>Shark Shopfits Pvt. Ltd. | 2017 – Present</p>
+<p>Led cross-functional teams, developed 600+ products, and delivered international retail projects.</p>
+</div>
+
+<div>
+<h3>Engineer – Planning & Production</h3>
+<p>Harmony Systems | 2014 – 2017</p>
+<p>Created CNC drawings, production plans and optimized manufacturing workflows.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Skills & Tools</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Design Tools</h3>
+<p>SolidWorks, AutoCAD, SketchUp, Zund Design Center</p>
+</div>
+
+<div class="card">
+<h3>Engineering Skills</h3>
+<p>BOM Creation, Costing, Vendor Development, Modular Design Logic</p>
+</div>
+
+<div class="card">
+<h3>Project Tools</h3>
+<p>ERP Systems, MS Excel, MS Project, Production Planning</p>
 </div>
 
 </div>
 </section>
 
 <div class="highlight">
-<h2>Let’s build smarter furniture systems</h2>
-<p>I work where design meets manufacturing intelligence.</p>
-<a class="btn" href="contact.html">Get in Touch</a>
+<h2>Download My Resume</h2>
+<p>You can download my full professional profile below.</p>
+<a class="btn" href="Vishwajeet_Pathak_Resume.pdf">Download Resume</a>
 </div>
 
 <footer>

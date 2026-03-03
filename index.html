@@ -12,32 +12,17 @@ background:#0f1115;
 color:white;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav{
 background:#111;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-weight:700;
-font-size:18px;
-letter-spacing:1px;
-}
-
-nav ul{
-list-style:none;
-margin:0;
-padding:0;
-display:flex;
-gap:25px;
+padding:18px;
+text-align:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
+margin:0 20px;
 font-weight:500;
 }
 
@@ -48,7 +33,7 @@ color:#ff6a00;
 /* HERO */
 header{
 text-align:center;
-padding:130px 20px;
+padding:110px 20px;
 background:
 linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
 url("images/workspace.jpg");
@@ -57,13 +42,14 @@ background-position:center;
 }
 
 header h1{
-font-size:56px;
+font-size:60px;
 margin:0;
+letter-spacing:1px;
 }
 
 header p{
 color:#ddd;
-font-size:20px;
+font-size:22px;
 margin-top:15px;
 }
 
@@ -90,16 +76,26 @@ border:2px solid #ff6a00;
 color:#ff6a00;
 }
 
-/* SECTIONS */
+/* SECTION */
 section{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
 padding:90px 20px;
 }
 
 h2{
-font-size:34px;
-margin-bottom:35px;
+font-size:36px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.about{
+font-size:18px;
+line-height:1.8;
+color:#bbb;
+max-width:850px;
+margin:auto;
+text-align:center;
 }
 
 /* GRID */
@@ -107,6 +103,7 @@ margin-bottom:35px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
+margin-top:40px;
 }
 
 .card{
@@ -140,6 +137,7 @@ font-size:14px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
 gap:15px;
+margin-top:40px;
 }
 
 .strip img{
@@ -147,13 +145,6 @@ width:100%;
 height:150px;
 object-fit:cover;
 border-radius:10px;
-}
-
-/* ABOUT */
-.about{
-max-width:800px;
-line-height:1.7;
-color:#bbb;
 }
 
 /* FOOTER */
@@ -169,19 +160,16 @@ border-top:1px solid #222;
 <body>
 
 <nav>
-<div class="logo">VISHWAJEET PATHAK</div>
-<ul>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="designs.html">Designs</a></li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="Vishwajeet_Pathak_Resume.pdf" target="_blank">Resume</a></li>
-</ul>
+<a href="projects.html">Projects</a>
+<a href="designs.html">Designs</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a href="Vishwajeet_Pathak_Resume.pdf" target="_blank">Resume</a>
 </nav>
 
 <header>
-<h1>Furniture Designer & Manufacturing Engineer</h1>
-<p>Developing Modular Furniture Systems with Engineering Precision</p>
+<h1>Vishwajeet Pathak</h1>
+<p>Furniture Designer & Manufacturing Engineer</p>
 
 <div class="hero-buttons">
 <a href="Vishwajeet_Pathak_Resume.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
@@ -190,45 +178,63 @@ border-top:1px solid #222;
 </header>
 
 <section>
+<h2>About Me</h2>
+
+<div class="about">
+<p>
+I am a Furniture Designer and Manufacturing Engineer specializing in the development of modular furniture systems that integrate creative design with real-world production feasibility.
+</p>
+
+<p>
+My expertise lies in transforming concepts into scalable products by combining structural logic, cost intelligence, vendor feasibility analysis, and production workflow planning. I work across retail environments, residential furniture, workspace systems, and engineered product development — ensuring every design is optimized not only for aesthetics, but also for manufacturing efficiency and long-term durability.
+</p>
+
+<p>
+With a strong foundation in engineering-led design, I focus on creating furniture solutions that are modular, installation-friendly, and production-ready from the very beginning of the development cycle.
+</p>
+</div>
+</section>
+
+<section>
 <h2>Selected Work</h2>
 
 <div class="grid">
 
 <div class="card">
 <img src="images/kitchen-design.jpg">
-<p>Modular kitchen system developed for scalable production and efficient installation.</p>
+<p>Modular kitchen system designed for scalable manufacturing and installation efficiency.</p>
 </div>
 
 <div class="card">
 <img src="images/retail-store-1.jpg">
-<p>Retail environment furniture designed for brand consistency across locations.</p>
+<p>Retail furniture solutions developed for multi-location brand consistency.</p>
 </div>
 
 <div class="card">
 <img src="images/home-furniture.jpg">
-<p>Residential furniture concepts balancing aesthetics with structural integrity.</p>
+<p>Residential furniture concepts integrating structural detailing and modern aesthetics.</p>
 </div>
 
 <div class="card">
 <img src="images/retail-store-installation.png">
-<p>On-site execution showcasing detailing, fabrication logic, and installation precision.</p>
+<p>On-site installation showcasing precision detailing and execution workflow.</p>
 </div>
 
 <div class="card">
 <img src="images/joineries-experiment.png">
-<p>Joinery experiments focused on material optimization and structural performance.</p>
+<p>Joinery development experiments focused on strength optimization and material efficiency.</p>
 </div>
 
 <div class="card">
 <img src="images/workspace.jpg">
-<p>Workspace systems integrating modular planning and ergonomic considerations.</p>
+<p>Workspace systems integrating modular planning and ergonomic design principles.</p>
 </div>
 
 </div>
 </section>
 
 <section>
-<h2>Concepts & Sketch Development</h2>
+<h2>Concept Development & Sketches</h2>
 
 <div class="strip">
 <img src="images/sketch-1.png">
@@ -237,19 +243,6 @@ border-top:1px solid #222;
 <img src="images/bar-stool.png">
 <img src="images/lounger.png">
 <img src="images/pool-bench.png">
-</div>
-</section>
-
-<section>
-<h2>About Me</h2>
-<div class="about">
-<p>
-I specialize in designing furniture systems that bridge creative intent with manufacturing feasibility. 
-My work spans modular workstations, retail fixtures, residential furniture, and product development strategies driven by cost intelligence and structural logic.
-</p>
-<p>
-With a strong engineering foundation, I focus on scalability, detailing, vendor feasibility, and real-world execution — ensuring every design moves efficiently from concept to production.
-</p>
 </div>
 </section>
 

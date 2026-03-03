@@ -1,135 +1,260 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Vishwajeet Pathak | Furniture Design Manager</title>
+<title>Vishwajeet Pathak | Furniture Designer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{margin:0;font-family:system-ui;background:#0f1115;color:white}
+body{
+margin:0;
+font-family:system-ui;
+background:#0f1115;
+color:white;
+}
 
-/* NAV */
-nav{background:#111;padding:18px 30px;text-align:right}
-nav a{color:white;text-decoration:none;margin-left:25px}
-nav a:hover{color:#ff6a00}
+/* NAVIGATION */
+nav{
+background:#111;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:700;
+font-size:18px;
+letter-spacing:1px;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#ff6a00;
+}
 
 /* HERO */
 header{
 text-align:center;
-padding:140px 20px;
+padding:130px 20px;
 background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;background-position:center}
-header h1{font-size:56px;margin:0}
-header p{color:#ddd;margin-top:15px;font-size:20px}
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("images/workspace.jpg");
+background-size:cover;
+background-position:center;
+}
+
+header h1{
+font-size:56px;
+margin:0;
+}
+
+header p{
+color:#ddd;
+font-size:20px;
+margin-top:15px;
+}
+
+.hero-buttons{
+margin-top:35px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+margin:8px;
+}
+
+.btn-primary{
+background:#ff6a00;
+color:white;
+}
+
+.btn-outline{
+border:2px solid #ff6a00;
+color:#ff6a00;
+}
 
 /* SECTIONS */
-section{max-width:1200px;margin:auto;padding:80px 20px}
-h2{font-size:36px;margin-bottom:30px}
+section{
+max-width:1200px;
+margin:auto;
+padding:90px 20px;
+}
+
+h2{
+font-size:34px;
+margin-bottom:35px;
+}
 
 /* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:22px}
+gap:25px;
+}
 
 .card{
 background:#181b22;
 border-radius:14px;
 overflow:hidden;
 border:1px solid #262b35;
-transition:.3s}
-.card:hover{transform:translateY(-5px);border-color:#ff6a00}
-.card img{width:100%;height:200px;object-fit:cover}
-.card p{padding:18px;margin:0}
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#ff6a00;
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.card p{
+padding:18px;
+margin:0;
+color:#ccc;
+font-size:14px;
+}
 
 /* STRIP */
 .strip{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:15px}
-.strip img{width:100%;height:150px;object-fit:cover;border-radius:10px}
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
+}
 
-/* CTA */
-.highlight{
-background:#ff6a00;color:black;text-align:center;padding:100px 20px}
-.btn{display:inline-block;margin-top:30px;padding:15px 32px;background:black;color:white;text-decoration:none;border-radius:8px}
+.strip img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+}
 
-footer{text-align:center;padding:40px;color:#777}
+/* ABOUT */
+.about{
+max-width:800px;
+line-height:1.7;
+color:#bbb;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:50px;
+color:#777;
+border-top:1px solid #222;
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-<a href="projects.html">Projects</a>
-<a href="designs.html">Designs</a>
-<a href="blog.html">Blog</a>
-<a href="contact.html">Contact</a>
+<div class="logo">VISHWAJEET PATHAK</div>
+<ul>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="designs.html">Designs</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="Vishwajeet_Pathak_Resume.pdf" target="_blank">Resume</a></li>
+</ul>
 </nav>
 
 <header>
-<h1>Vishwajeet Pathak</h1>
-<p>Furniture Design Manager • Product Development • Manufacturing Integration</p>
+<h1>Furniture Designer & Manufacturing Engineer</h1>
+<p>Developing Modular Furniture Systems with Engineering Precision</p>
+
+<div class="hero-buttons">
+<a href="Vishwajeet_Pathak_Resume.pdf" target="_blank" class="btn btn-primary">Download Resume</a>
+<a href="contact.html" class="btn btn-outline">Contact Me</a>
+</div>
 </header>
 
 <section>
-<h2>About My Work</h2>
-<p>I design furniture systems focused on modular logic, manufacturability and scalable production. My work bridges concept thinking with real-world engineering execution and cost intelligence.</p>
-</section>
-
-<section>
-<h2>Selected Work Preview</h2>
+<h2>Selected Work</h2>
 
 <div class="grid">
 
-<div class="card"><img src="https://unsplash.com/photos/a-store-filled-with-lots-of-shoes-on-display-4O9NJ3cJo88"><p>Retail Fixture Systems</p></div>
-<div class="card"><img src="https://unsplash.com/photos/a-conference-room-with-a-wooden-table-and-black-chairs-qyoN-HxFCRg"><p>Workspace Design</p></div>
-<div class="card"><img src="https://unsplash.com/photos/a-kitchen-with-stools-and-a-counter-8fd0resdtBk"><p>Kitchen Modules</p></div>
-<div class="card"><img src="https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-flat-screen-tv-xRuHNSq5rD0"><p>Residential Furniture</p></div>
-<div class="card"><img src="https://unsplash.com/photos/gray-metal-framed-glass-hallway-ifZ5K80s6yU"><p>Store Installations</p></div>
-<div class="card"><img src="https://www.freepik.com/free-photo/tools-wood-sawdust-workshop_10267976.htm#fromView=keyword&page=1&position=2&uuid=cd261c0a-54df-42ee-b1fe-b382f5cc3f29&query=Wood+joinery"><p>Joinery Experiments</p></div>
+<div class="card">
+<img src="images/kitchen-design.jpg">
+<p>Modular kitchen system developed for scalable production and efficient installation.</p>
+</div>
+
+<div class="card">
+<img src="images/retail-store-1.jpg">
+<p>Retail environment furniture designed for brand consistency across locations.</p>
+</div>
+
+<div class="card">
+<img src="images/home-furniture.jpg">
+<p>Residential furniture concepts balancing aesthetics with structural integrity.</p>
+</div>
+
+<div class="card">
+<img src="images/retail-store-installation.png">
+<p>On-site execution showcasing detailing, fabrication logic, and installation precision.</p>
+</div>
+
+<div class="card">
+<img src="images/joineries-experiment.png">
+<p>Joinery experiments focused on material optimization and structural performance.</p>
+</div>
+
+<div class="card">
+<img src="images/workspace.jpg">
+<p>Workspace systems integrating modular planning and ergonomic considerations.</p>
+</div>
 
 </div>
 </section>
 
 <section>
-<h2>Design Inspiration</h2>
+<h2>Concepts & Sketch Development</h2>
 
 <div class="strip">
-
-<img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1521783988139-893ce3e5d0c7?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
-<img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=800&q=80">
-
+<img src="images/sketch-1.png">
+<img src="images/sketch-2.png">
+<img src="images/stool.png">
+<img src="images/bar-stool.png">
+<img src="images/lounger.png">
+<img src="images/pool-bench.png">
 </div>
 </section>
 
 <section>
-<h2>Latest Insights</h2>
-
-<div class="grid">
-
-<div class="card"><img src="https://images.unsplash.com/photo-1616628182509-3e3b9a1c6f5d?auto=format&fit=crop&w=1200&q=80"><p><a href="modular-furniture-systems.html" style="color:white;text-decoration:none">Modular Furniture Systems</a></p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=80"><p><a href="designing-for-manufacturing.html" style="color:white;text-decoration:none">Designing for Manufacturing</a></p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"><p><a href="ai-in-furniture-development.html" style="color:white;text-decoration:none">AI in Furniture</a></p></div>
-
+<h2>About Me</h2>
+<div class="about">
+<p>
+I specialize in designing furniture systems that bridge creative intent with manufacturing feasibility. 
+My work spans modular workstations, retail fixtures, residential furniture, and product development strategies driven by cost intelligence and structural logic.
+</p>
+<p>
+With a strong engineering foundation, I focus on scalability, detailing, vendor feasibility, and real-world execution — ensuring every design moves efficiently from concept to production.
+</p>
 </div>
 </section>
 
-<div class="highlight">
-<h2>Let’s Build Smarter Furniture Systems</h2>
-<p>Open to collaborations, consulting, and product development opportunities.</p>
-<a class="btn" href="contact.html">Contact Me</a>
-</div>
-
 <footer>
-© Vishwajeet Pathak • pathakv.com
+© 2026 Vishwajeet Pathak
 </footer>
 
 </body>
